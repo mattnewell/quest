@@ -1,0 +1,19 @@
+regions:
+- us-east-2
+
+account-blocklist:
+  - "999999999999" # no prod accounts
+
+accounts:
+  "566613373177":
+    filters:
+      IAMUser:
+        - "matt"
+      IAMUserPolicyAttachment:
+        - "matt -> AdministratorAccess"
+      IAMUserAccessKey:
+        - "matt -> AKIAYH3GJ6D47ORQFBF6"
+      EC2KeyPair:
+        - "November2022"
+      EC2VPC:
+        - "vpc-c8d43aa1"
